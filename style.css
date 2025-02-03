@@ -1,0 +1,49 @@
+.card{
+    max-width: 27rem;
+    height: auto;
+    text-align: center;
+    /* box-shadow: 0 5rem 10rem 0 rgba(0,0,0,0.2); */
+    border:0.1rem solid purple;
+    border-radius: 15px;
+  
+  
+}
+
+
+.title{
+ color: purple;
+ font-size: 1.5rem;
+}
+
+
+.profilepics{
+ background-color: purple;
+ border-radius: 15px;
+ height: 27rem;
+}
+
+a > img{
+    height: 2rem;
+}
+
+.icons{
+    margin-right: 2rem;
+}
+
+
+.btn{
+    background-color: purple;
+    color:white;
+    border: 0;
+    padding: 7px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+     margin-bottom: 8px;
+     font-weight: 600;
+}
+
+
+
+
+
+
