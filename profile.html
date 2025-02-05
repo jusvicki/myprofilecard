@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="card">
-      <img data-testid="profilePicture" src="./images/MyProfessionalprofilepicture-removebg-preview.png" class="profilepics" alt="">
+      <img id="profilePicture" src="./images/MyProfessionalprofilepicture-removebg-preview.png" class="profilepics" alt="">
     <div class="details">
-        <h2 data-testid="fullName">Adeyokun Anuoluwapo</h2>
-        <p data-testid="jobTitle" class="title">Frontend developer</p>
-        <p data-testid="shortBio">Adeyokun Anuoluwapo is a passionate front-end developer with experience in creating intuitive, responsive, and visually engaging websites and web applications. Skilled in HTML, CSS, JavaScript, and modern front-end frameworks like React and Next.js.Results-oriented software developer with a proven track record of optimizing project outcomes.Skilled in strategic and team collaboration..Seeking an internship role to leverage technical and project management expertise and drive software development excellence</p>
-        <p data-testid="currentLocation">Location:Lagos,Nigeria.</p>
-        <p data-testid="emailAddress">Email:adeyokunanuoluwapo@yahoo.com</p>
+        <h2 id="fullName">Adeyokun Anuoluwapo</h2>
+        <p id="jobTitle" class="title">Frontend developer</p>
+        <p id="shortBio">Adeyokun Anuoluwapo is a passionate front-end developer with experience in creating intuitive, responsive, and visually engaging websites and web applications. Skilled in HTML, CSS, JavaScript, and modern front-end frameworks like React and Next.js.Results-oriented software developer with a proven track record of optimizing project outcomes.Skilled in strategic and team collaboration..Seeking an internship role to leverage technical and project management expertise and drive software development excellence</p>
+        <p id="currentLocation">Location:Lagos,Nigeria.</p>
+        <p id="emailAddress">Email:adeyokunanuoluwapo@yahoo.com</p>
         <a href="http://wa.link/s5654u"><button class="btn">Contact Me</button></a> 
     </div>
-    <div data-testid="socialLinks">
-    <a class="icons" href="www.linkedin.com/in/adeyokun-anuoluwapo-82a385285"><img src="./images/icons8-linkedin-50.png" alt=""></a>
+    <div id="socialLinks">
+    <a class="icons" href="https://www.linkedin.com/in/adeyokun-anuoluwapo-82a385285"><img src="./images/icons8-linkedin-50.png" alt=""></a>
     <a class="icons" href="http://wa.link/s5654u"><img src="./images//icons8-facebook-50.png" alt=""></a>
     <a href="https://www.instagram.com/jus_vicki_?igsh=eDhsZTA3Ymppb2U%3D&utm_source=qr"><img src="./images/icons8-instagram-50.png" alt=""></a>
     </div>
-    <p data-testid="currentTimeUTC" id="utc-time" ></p> 
+    <p id="currentTimeUTC"></p> 
     </div>
 
 
@@ -39,7 +38,7 @@
             const utcTime = new Date(nigeriaTime.toUTCString());
 
             // Update the content of the HTML elements
-            document.getElementById('utc-time').textContent = utcTime.toLocaleString();
+            document.getElementById('currentTimeUTC').textContent = utcTime.toLocaleString();
         }
 
         // Update the time immediately and set an interval to update every second
